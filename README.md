@@ -211,6 +211,6 @@ This project is licensed under the MIT License - see the [LICENSE.txt](LICENSE.t
 [cdc]: http://martinfowler.com/articles/consumerDrivenContracts.html
 [java]: ../../../java
 [oxygenxml]: https://www.oxygenxml.com/xml_editor/download_oxygenxml_editor.html
-[sample-cdc]: ../../../java/sample/tree/master/cdc
+[sample-cdc]: ../../../java/tree/master/sample/cdc
 [schema]: ../../../schema
 [xmlschema]: http://www.w3.org/2001/XMLSchema
