@@ -89,8 +89,6 @@ The <ins>JSD</ins> that describes the **Response** contract is:
 
 **(Alternatively)** The <ins>JSDx</ins> form of the **Response** contract is:
 
-<sub>_**Note:** The [Converter][#converter] utility automatically converts between <ins>JSD</ins> and <ins>JSDx</ins>._</sub>
-
 ```xml
 <schema
   xmlns="http://www.jsonx.org/schema-0.3.xsd"
@@ -154,8 +152,6 @@ To satisfy **Consumer2**'s request, the contract is updated to support version *
 ```
 
 **(Alternatively)** The <ins>JSDx</ins> form of the change to the **Response** contract is:
-
-<sub>_**Note:** The [Converter][#converter] utility automatically converts between <ins>JSD</ins> and <ins>JSDx</ins>._</sub>
 
 ```diff
 <schema
