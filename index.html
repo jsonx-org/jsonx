@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JSONx</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="JSONx">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
+</head>
+<body>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      name: '<b>JSONx</b>',
+      repo: 'jsonx-org/jsonx',
+      homepage: 'https://raw.githubusercontent.com/jsonx-org/jsonx/master/README.md',
+      relativePath: true,
+      alias: {
+        "/schema": "https://raw.githubusercontent.com/jsonx-org/schema/master/README.md",
+        "/binding": "https://raw.githubusercontent.com/jsonx-org/java/master/binding/README.md",
+        "/generator": "https://raw.githubusercontent.com/jsonx-org/java/master/generator/README.md",
+        "/jsonxml": "https://raw.githubusercontent.com/jsonx-org/java/master/jsonxml/README.md",
+        "/jsonx-maven-plugin": "https://raw.githubusercontent.com/jsonx-org/java/master/jsonx-maven-plugin/README.md",
+        "/jaxrs": "https://raw.githubusercontent.com/jsonx-org/java/master/jaxrs/README.md",
+        "/sample": "https://raw.githubusercontent.com/jsonx-org/java/master/sample/README.md"
+      },
+      markdown: {
+        renderer: {
+          link: function (href, title, text) {
+            var i;
+            for (i = -1; href.startsWith("../") || href.startsWith("/.."); ++i)
+              href = href.substring(3);
+
+            if (i == -1)
+              i = 0;
+
+            var path = location.href.substring(location.href.indexOf('/', 8));
+            var id = path.indexOf("?id=");
+            if (id > -1)
+              path = path.substring(0, id);
+
+            for (var slash; (slash = path.lastIndexOf('/')) != -1 && i > 0; --i)
+              path = path.substring(0, slash);
+
+            if (href.charAt(0) === '#')
+              return '<a href="' + path + '?id=_' + href.substring(1) + '">' + text + '</a>';
+
+            if (href.startsWith("http"))
+              return '<a href="' + href + '">' + text + '</a>';
+
+            if (href.endsWith("issues"))
+              return '<a href="https://github.com/jsonx-org/java/issues">' + text + '</a>';
+
+            if (href.endsWith("LICENSE.txt"))
+              return '<a href="https://github.com/jsonx-org/java/blob/master/LICENSE.txt">' + text + '</a>';
+
+            return '<a href="#/' + href.replace(/^\/?(\.\.\/?)+/g, "") + '">' + text + '</a>';;
+          }
+        }
+      }
+    }
+  </script>
+  <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+  <script src="//unpkg.com/docsify/lib/plugins/zoom-image.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1"></script>
+</body>
+</html>
