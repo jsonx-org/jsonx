@@ -16,8 +16,8 @@ This document introduces the <ins>JSONx</ins> project, and presents a directory 
 <samp>&nbsp;&nbsp;&nbsp;&nbsp;</samp>2.1 [Consumer Driven Contracts](#21-consumer-driven-contracts)<br>
 <samp>&nbsp;&nbsp;</samp>3 [<ins>JSON Schema Definition Language</ins>][#jsd]<br>
 <samp>&nbsp;&nbsp;</samp>4 [<ins>JSONx Framework for Java</ins>](#4-jsonx-framework-for-java)<br>
-<samp>&nbsp;&nbsp;</samp>5 [Contributing](#9-contributing)<br>
-<samp>&nbsp;&nbsp;</samp>6 [License](#10-license)
+<samp>&nbsp;&nbsp;</samp>5 [Contributing](#5-contributing)<br>
+<samp>&nbsp;&nbsp;</samp>6 [License](#6-license)
 
 ## <b>1</b> Introduction
 
