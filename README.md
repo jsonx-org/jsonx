@@ -68,7 +68,11 @@ Version **v1** of the protocol defines the contract:
   }
   ```
 
-The <ins>JSD</ins> that describes the **Response** contract is:
+The schema that describes the **Response** contract is:
+
+<!-- tabs:start -->
+
+###### **JSD**
 
 ```json
 {
@@ -87,7 +91,7 @@ The <ins>JSD</ins> that describes the **Response** contract is:
 }
 ```
 
-**(Alternatively)** The <ins>JSDx</ins> form of the **Response** contract is:
+###### **JSDx**
 
 ```xml
 <schema
@@ -110,6 +114,10 @@ The <ins>JSD</ins> that describes the **Response** contract is:
 </schema>
 ```
 
+<!-- tabs:end -->
+
+<sub>_**Note:** The [Converter][#converter] utility automatically converts between <ins>JSD</ins> and <ins>JSDx</ins>._</sub>
+
 All actors -- **Producer**, **Consumer1**, and **Consumer2** -- agree on the contract, and implement and integrate the protocol into their systems. To assert receipt of contract-compliant documents, all actors use the contract definition to automatically validate received and sent messages.
 
 After many months of running in production, **Consumer2** issues a request to the **Producer** to provide additional information in the response. Specifically, **Consumer2** requests for the addition of another field in the JSON response:
@@ -129,6 +137,9 @@ After many months of running in production, **Consumer2** issues a request to th
 
 To satisfy **Consumer2**'s request, the contract is updated to support version **v2** of the **Response**:
 
+<!-- tabs:start -->
+
+###### **JSD**
 
 ```diff
 {
@@ -151,7 +162,7 @@ To satisfy **Consumer2**'s request, the contract is updated to support version *
 }
 ```
 
-**(Alternatively)** The <ins>JSDx</ins> form of the change to the **Response** contract is:
+###### **JSDx**
 
 ```diff
 <schema
@@ -178,6 +189,10 @@ To satisfy **Consumer2**'s request, the contract is updated to support version *
 
 </schema>
 ```
+
+<!-- tabs:end -->
+
+<sub>_**Note:** The [Converter][#converter] utility automatically converts between <ins>JSD</ins> and <ins>JSDx</ins>._</sub>
 
 With this approach, the **v2** evolution of the contract satisfies **Customer2**. And, since the contract also retains support for **v1**, integration with **Customer1** is unaffected.
 
