@@ -10,16 +10,16 @@ This document introduces the <ins>JSONx</ins> project, and presents a directory 
 
 ## Table of Contents
 
-<samp>&nbsp;&nbsp;</samp>1 [Introduction](#1-introduction)<br>
+<samp>&nbsp;&nbsp;</samp>1 [<ins>Introduction</ins>](#1-introduction)<br>
 <samp>&nbsp;&nbsp;&nbsp;&nbsp;</samp>1.1 [Conventions Used in This Document](#11-conventions-used-in-this-document)<br>
-<samp>&nbsp;&nbsp;</samp>2 [Use-Cases](#2-use-cases)<br>
+<samp>&nbsp;&nbsp;</samp>2 [<ins>Use-Cases</ins>](#2-use-cases)<br>
 <samp>&nbsp;&nbsp;&nbsp;&nbsp;</samp>2.1 [Consumer Driven Contracts](#21-consumer-driven-contracts)<br>
 <samp>&nbsp;&nbsp;</samp>3 [<ins>JSON Schema Definition Language</ins>][#jsd]<br>
 <samp>&nbsp;&nbsp;</samp>4 [<ins>JSONx Framework for Java</ins>](#4-jsonx-framework-for-java)<br>
-<samp>&nbsp;&nbsp;</samp>5 [Contributing](#5-contributing)<br>
-<samp>&nbsp;&nbsp;</samp>6 [License](#6-license)
+<samp>&nbsp;&nbsp;</samp>5 [<ins>Contributing</ins>](#5-contributing)<br>
+<samp>&nbsp;&nbsp;</samp>6 [<ins>License</ins>](#6-license)
 
-## <b>1</b> Introduction
+## <b>1</b> <ins>Introduction</ins>
 
 The <ins>JSONx</ins> project was created to help developers address common problems and use-cases when working with JSON documents. The <ins>JSONx</ins> project offers <ins>structural</ins> and <ins>functional</ins> patterns that systematically reduce errors and pain-points commonly encountered when developing software that interfaces with JSON. The <ins>structural</ins> patterns are defined in the [<ins>JSON Schema Definition Language</ins>][schema], which is a programming-language-agnostic <ins>schema language</ins> used to describe constraints and document the meaning, usage and relationships of the constituent parts of JSON documents. The <ins>functional</ins> patterns are reference implementations of the specification of the <ins>schema language</ins>, providing utilities that address common use-cases for applications that use JSON in one way or another. Common use-cases include:
 
@@ -31,7 +31,7 @@ The <ins>JSONx</ins> project was created to help developers address common probl
 
 The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in [RFC2119](https://www.ietf.org/rfc/rfc2119.txt).
 
-## <b>2</b> Use-Cases
+## <b>2</b> <ins>Use-Cases</ins>
 
 The following sections lists common use-cases where <ins>JSONx</ins> project can be used.
 
@@ -210,13 +210,13 @@ Provides a reference implementation of a processor, validator, and binding API f
 
 _For a detailed specification of the <ins>JSONx Framework for Java</ins> and its modules, see **[<ins>JSONx Framework for Java</ins>][java]**._
 
-## <b>5</b> Contributing
+## <b>5</b> <ins>Contributing</ins>
 
 Pull requests are welcome. For major changes, please [open an issue](../../issues) first to discuss what you would like to change.
 
 Please make sure to update tests as appropriate.
 
-## <b>6</b> License
+## <b>6</b> <ins>License</ins>
 
 This project is licensed under the MIT License - see the [LICENSE.txt](LICENSE.txt) file for details.
 
