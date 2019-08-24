@@ -37,7 +37,7 @@ The following sections lists common use-cases where <ins>JSONx</ins> project can
 
 ### <b>2.1</b> Consumer Driven Contracts
 
-The <ins>JSONx</ins> project was created specifically with [<ins>Consumer Driven Contracts</ins>][cdc] in mind. With the [<ins>JSON Schema Definition Language (JSD)</ins>][#jsd], one can create a <ins>Consumer Driven Contract (CDC)</ins> with a model that includes the capacity to evolve based on schema versioning. Additionally, the <ins>JSD</ins> can be used by producers and consumers to validate documents in a communication protocol.
+The <ins>JSONx</ins> project was created specifically with [<ins>Consumer Driven Contracts</ins><sup>❐</sup>][cdc] in mind. With the [<ins>JSON Schema Definition Language (JSD)</ins>][#jsd], one can create a <ins>Consumer Driven Contract (CDC)</ins> with a model that includes the capacity to evolve based on schema versioning. Additionally, the <ins>JSD</ins> can be used by producers and consumers to validate documents in a communication protocol.
 
 The following example illustrates a simple protocol that uses the CDC approach, and consists of the actors:
 
@@ -223,9 +223,9 @@ This project is licensed under the MIT License - see the [LICENSE.txt](LICENSE.t
 [#invoice-example]: #43-getting-started
 [#jsd]: #3-json-schema-definition-language
 
-[cdc]: http://martinfowler.com/articles/consumerDrivenContracts.html
 [java]: ../../../java
-[oxygenxml]: https://www.oxygenxml.com/xml_editor/download_oxygenxml_editor.html
 [sample-cdc]: ../../../java/tree/master/sample/cdc
 [schema]: ../../../schema
+
+[cdc]: http://martinfowler.com/articles/consumerDrivenContracts.html
 [xmlschema]: http://www.w3.org/2001/XMLSchema
